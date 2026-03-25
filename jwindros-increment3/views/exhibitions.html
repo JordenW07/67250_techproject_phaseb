@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a id="navselected" href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html" class="cta">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    <div class="main">
+            <h2>Exhibition 1: Textile & Abstraction</h2>
+        <p>
+            This exhibition explores how artists use textile to express identity, 
+            labor, and culture. Through the process of knitting, felting, embroidery, 
+            and/or weaving, artists are able to tell a story with geometric patterns.
+            The exhibition highlight fiber-based crafts with a theme of modernism and resistance.
+            International artists join together to share their craft and story.
+        </p>
+            <h2>Youth & Imagination: The Craft of Young Innovators</h2>
+        <p>
+            Youth & Imagination Night highlights the hard-work and dedication of students 
+            participating in the Imagination Station Scholars program. As the school-year 
+            comes to an end, students display their long-term projects, focusing on
+            the intersection of art, technology, and society.
+        </p>
+    </div>
+    <footer>
+        <p>
+            &copy; <span id="copyYear"></span> MonoMuse. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
