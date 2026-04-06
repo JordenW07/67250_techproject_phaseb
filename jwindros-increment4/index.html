@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+<link rel="stylesheet" href="./static/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="./static/script.js" defer></script>
+<script
+  src="https://code.jquery.com/jquery-4.0.0.min.js"
+  integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+  crossorigin="anonymous"></script>
+
+</head>
+<body onload="addYear()">
+<div class="container">
+    <header class="header">
+        <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+
+    <nav class="nav_bar">
+        <a href="index.html">Home</a>
+        <a href="views/explore.html">Explore</a>
+        <a href="views/exhibitions.html">Exhibitions</a>
+        <a href="views/buytickets.html" class="cta">Buy Tickets</a>
+    </nav>
+    <div class="featured_header">
+        <h3> April’s Feature: Wayne McGregor’s Infinite Bodies</h3>
+    </div>
+    <main class="main">
+        <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+            <p>
+            Visit MonoMuse Museum this month for a chance to experience Wayne McGregor’s Infinite 
+            Bodies! The exhibitions embraces dance and technology by uncovering how the 
+            human body can incorporate data and AI to act as both an instrument and a 
+            performer. The multi-sensory, interactive exhibition will be housed in 
+            MonoMuse Museum for the month of April. Wayne McGregor, the artist behind 
+            Infinite Bodies, has collaborated with other artists, designers, filmmakers, 
+            and musicians to bring this immersive event to life.  This amazing exhibition 
+            is worthwhile for people of all ages. Visit MonoMuse throughout the week,
+            Monday - Sunday from 9AM to 9PM, to experience Wayne McGregor’s Infinite Bodies. 
+            Relaxed sessions will also be held for those with neurodiverse needs, 
+            as our purpose ar MonoMuse Museum is to cater to all of our guests' needs 
+            because everyone deserves to experience the museum’s exceptional offerings.
+            We hope to see you soon! To purchase tickets, please visit the Buy Tickets page and
+            for quick-access select the Buy Tickets button below.
+            </p>
+            <a class="ticketlink-cta" href="views/buytickets.html" >Buy Tickets</a>
+        
+            <div>
+                <p id="shortIntro">About MonoMuse Museum: MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology, and human creativity.</p>
+                <span id="readMore">Read More</span>
+                <p id="longIntro"> Through immersive exhibitions, interactive installations, and rotating collections, MonoMuse invites visitors to discover how digital innovation is transforming the way we create, experience, and understand art. Whether you are a first-time visitor or a returning member, our exhibitions offer new perspectives on the role of technology in culture and everyday life. Plan your visit to experience cutting-edge exhibitions, hands-on experiences, and events designed to inspire curiosity and creativity.</p>
+                <span id="readLess">Read Less</span>
+            </div> 
+
+    </main>
+    <figure class="home_img">
+        <img src="static/featured.jpg" class="home_img" alt="MonoMuse April Feature">
+    </figure>
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+</body>
+</html>
