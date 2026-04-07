@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>   
+    
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html" class="cta">Buy Tickets</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    </nav>
+    <div class="featured_header">
+        <h3> How long does it take to become a MonoMuse Member?</h3>
+        <h3>Only 5 Minutes! Call 742-921-7777 Today!</h3></h3>
+    </div>
+    <div class="main">
+        <h3> Wayne McGregor’s Infinite Bodies</h3>
+        <p>The exhibitions embraces dance and technology by uncovering how the human 
+            body can incorporate data and AI to act as both an instrument and a performer. 
+            The multi-sensory, interactive exhibition will be housed in MonoMuse 
+            Museum for the month of April. Wayne McGregor, the artist behind Infinite 
+            Bodies, has collaborated with other artists, designers, filmmakers, and 
+            musicians to bring this immersive event to life. This amazing exhibition 
+            is worthwhile for people of all ages.
+        </p>
+        <h3>Textile & Abstraction</h3>
+        <p>
+            This exhibition explores how artists use textile to express identity, 
+            labor, and culture. Through the process of knitting, felting, embroidery, 
+            and/or weaving, artists are able to tell a story with geometric patterns.
+            The exhibition highlight fiber-based crafts with a theme of modernism and resistance.
+            International artists join together to share their craft and story.
+        </p>
+        <h3>Youth & Imagination: The Craft of Young Innovators</h3>
+        <p>
+            Youth & Imagination Night highlights the hard-work and dedication of students 
+            participating in the Imagination Station Scholars program. As the school-year 
+            comes to an end, students display their long-term projects, focusing on
+            the intersection of art, technology, and society.
+        </p>
+    </div>
+
+    <div class="main_img">
+        <div class="slideshow">
+            <h3>Take a Sneak Peak at this month's featured exhibition!</h3>
+            <div class="imagesShow fade"> 
+                <img src="../static/featured.jpg" style="width:100%">
+            </div>
+
+            <div class="imagesShow fade">
+                <img src="../static/slideimg2.webp" style="width:100%">
+            </div>
+
+            <div class="imagesShow fade">
+                <img src="../static/slideimg3.jpeg" style="width:100%">
+            </div>
+
+            <div class="imagesShow fade">
+                <img src="../static/slideimg4.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</body>
+</html>
