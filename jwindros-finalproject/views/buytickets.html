@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../static/script.js" defer></script>
+<style></style>
+
+</head>
+<body onload="addYear()">
+<div class="container">
+
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+        
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="buytickets.html" class="cta">Buy Tickets</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+    </nav>
+    <div class="featured_header">
+        <h3> Member Perks: Members visit MonoMuse Museum this month to receive a free MonoMuse T-shirt!</h3>
+    </div>
+    <main class="main">
+        <section class="buytickets_main">
+            <h2>Please select a date.</h2>
+            <table id="calendarTable" class="calendar"></table>
+        </section>
+
+    </main>
+
+    <aside class="main_img ticket_tables">
+        <h2>Ticket Information</h2>
+        <h3>Become a Member Today!</h3>
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Adult *Non-Member*</td>
+                <td>General admission for ages 18 and over.</td>
+                <td>$18</td>
+            </tr>
+
+            <tr>
+                <td>Child *Non-Member*</td>
+                <td>General admission for ages 10 and under.</td>
+                <td>$10</td>
+            </tr>
+
+            <tr>
+                <td>Member</td>
+                <td>Member ID required</td>
+                <td>$15</td>
+            </tr>
+
+            <tr>
+                <td>Student/Child Member</td>
+                <td>Student ID required, parent/gaurdian required for children</td>
+                <td>$7</td>
+            </tr>
+        
+        </table>
+        <section class="ticket_form">
+            <form id="ticketForm">
+            <h2>Please fill out all fields to begin purchasing tickets.</h2>
+
+                <label for="name">Name (Required):</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email (Required):</label>
+                <input type="email" id="email" name="email" required placeholder="email@example.com"/>
+                <!-- Logic for selecting Ticket Type -->
+                <label for="ticketType">Ticket Type (Required):</label>
+                <select id="ticketType" onchange="getTotal()" required>
+                    <option value="20">Adult *Non-Member*($20)</option>
+                    <option value="10">Child *Non-Member*($10)</option>
+                    <option value="15">Member ($15)</option>
+                    <option value="7">Student/Child Member ($7)</option>
+                </select>
+
+                <label for="quantity">Ticket Quantity (Required):</label>
+                <input type="number" id="quantity" name="quantity" oninput="getTotal()" min="1" max="10" required/>
+                <p>Total Price: $<span id="totalPrice">0</span></p>
+
+                <label for="visitDate">Selected Date (Required):</label>
+                <input type="text" id="visitDate" name="visitDate" readonly />
+
+                <button type="button" onclick="submitPurchase()">Buy Tickets</button>
+            </form>
+        </section>
+    </aside>
+ 
+ 
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+</body>
+</html>

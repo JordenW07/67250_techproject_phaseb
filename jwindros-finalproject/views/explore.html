@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<script
+  src="https://code.jquery.com/jquery-4.0.0.min.js"
+  integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+<body onload="addYear()">
+<div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header> 
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html" class="cta">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+        </nav>
+    <div class="featured_header">
+        <h3> Call 742-921-7777 to become a MonoMuse Museum Member Today!</h3>
+    </div>
+    <div class="main">
+        <h3>Mission Statement</h3>
+        <p>
+             MonoMuse Museum seeks to encourage the exploration of art, technology,
+             and society. Our mission is to connect curious minds with innovative 
+             exhibitions and workshops. By incorporating contemporary technology 
+             and ideas, we hope to establish and maintain creative production and 
+             innovative thinking. 
+        </p>
+        <h3>Milestones</h3>
+        <u1> 
+        <li>2025: MonoMuse builds two new wings dedicated to AI and architecture.</li>
+        <li>2010: MonoMuse partners with the local school district to launch 
+        its Imagination Station. Students learn various art styles, 
+        use innovative technology, and learn about historical 
+        movements during workshops hosted in the Imagination Station.</li>
+        <li>2007: MonoMuse makes an introduction by hosting its first exhibition 
+        on textile and modern abstraction.</li>
+        </u1>
+        <h3>Visit MonoMuse Today!</h3>
+        <p>Visiting Hours:</p>
+        <p>Monday - Friday: 8AM - 8PM</p>
+        <p>Saturday: 8AM - 12AM</p>
+        <p>Sunday: 1PM - 9:30PM</p>
+
+    </div>
+    <figure class="main_img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/32pqI1dod8A?si=ILeVP-4Vq7aa9Yik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Directions to MonoMuse Museum:</h3>
+        <div id="map"></div>
+    </figure>
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+</div>
+</body>
+</html>
